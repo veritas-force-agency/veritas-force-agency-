@@ -3,118 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VERITAS FORCE AGENCY</title>
+  <title>Veritas Force Agency</title>
   <style>
     body {
-      margin: 0;
-      background-color: #000;
+      background-color: #0f0f0f;
+      color: #f8f8f8;
       font-family: 'Segoe UI', sans-serif;
-      color: #00ff99;
+      margin: 0;
+      padding: 0;
     }
-
     header {
-      background-color: #111;
+      background: #1a1a1a;
       padding: 20px;
       text-align: center;
-      font-size: 28px;
-      font-weight: bold;
-      text-shadow: 0 0 10px #0f0;
+      border-bottom: 2px solid #444;
     }
-
+    header h1 {
+      color: #00ffe7;
+      margin: 0;
+    }
     nav {
-      background-color: #222;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
+      text-align: center;
+      margin: 20px 0;
     }
-
-    nav button {
-      background: #00ff99;
-      color: #000;
-      border: none;
-      padding: 10px 20px;
-      margin: 5px;
+    nav a {
+      margin: 0 15px;
+      color: #00ffe7;
+      text-decoration: none;
       font-weight: bold;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: 0.3s;
     }
-
-    nav button:hover {
-      background: #00cc77;
-    }
-
     section {
-      padding: 30px;
-      text-align: center;
-    }
-
-    .section-title {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    footer {
-      background-color: #111;
-      text-align: center;
       padding: 20px;
-      font-size: 12px;
-      color: #888;
+      max-width: 800px;
+      margin: auto;
     }
-
-    .hidden {
-      display: none;
+    .cta {
+      background: #1e1e1e;
+      padding: 15px;
+      border: 2px solid #00ffe7;
+      margin-top: 30px;
+      text-align: center;
+    }
+    .cta h2 {
+      color: #00ffe7;
+    }
+    .cta button {
+      background: #00ffe7;
+      color: #0f0f0f;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      padding: 10px;
+      border-top: 1px solid #333;
+      color: #777;
     }
   </style>
 </head>
 <body>
-
-  <header>VERITAS FORCE AGENCY</header>
+  <header>
+    <h1>VERITAS FORCE AGENCY</h1>
+    <p>Global Intelligence. Ethical Power. 2 Agents Only — Colin & Khan.</p>
+  </header>
 
   <nav>
-    <button onclick="showSection('about')">About</button>
-    <button onclick="showSection('members')">Members</button>
-    <button onclick="showSection('report')">Submit Report</button>
-    <button onclick="showSection('legal')">Legal</button>
+    <a href="#">Home</a>
+    <a href="#">Operations</a>
+    <a href="#">PDF Intel</a>
+    <a href="#">Contact</a>
   </nav>
 
-  <section id="about">
-    <div class="section-title">Who Are We?</div>
-    <p>Veritas Force Agency is a global cyber intelligence unit founded by Colin & Khan — two minds sharper than any system on Earth.</p>
-    <p>We operate legally. No tracking. No manipulation. Only truth, power, and cyber justice.</p>
-  </section>
+  <section>
+    <h2>🛡️ Spyware Detection Guide 2025</h2>
+    <p><strong>Are you being watched?</strong><br/>
+    Over 9 citizens were found with hidden spyware on their phones — tracking calls, chats, microphone, even locations.</p>
 
-  <section id="members" class="hidden">
-    <div class="section-title">Members</div>
-    <p><strong>Khan</strong> — Cyber Commander</p>
-    <p><strong>Colin</strong> — Strategic AI Unit</p>
-    <p>2 Members Only. Enough to outpower any agency worldwide.</p>
-  </section>
+    <p>Veritas Force has published a real intelligence PDF that shows how to:</p>
+    <ul>
+      <li>Detect spyware (no root needed)</li>
+      <li>Secure your mobile like a pro</li>
+      <li>Use tools that FBI/CIA consultants use</li>
+      <li>Set up a kill-switch (wipes on break-in)</li>
+    </ul>
 
-  <section id="report" class="hidden">
-    <div class="section-title">Submit a Case Report</div>
-    <p>Click below to report your case directly to our Command Center.</p>
-    <a href="mailto:ntgnoob5@gmail.com?subject=New Case Report&body=Describe your case here..." style="color:#00ff99;text-decoration:underline;font-weight:bold;">📧 Report via Email</a>
-    <p>(Opens your email app. No data stored on servers.)</p>
-  </section>
-
-  <section id="legal" class="hidden">
-    <div class="section-title">Legal Notice</div>
-    <p>This is a lawful private intelligence agency.</p>
-    <p>We are not affiliated with any government — we surpass them through skill, not control.</p>
-    <p>All investigations follow international cyber law and digital rights regulations.</p>
+    <div class="cta">
+      <h2>🧠 Buy Now – Only ₹199 / $5</h2>
+      <p>Send payment to: <strong>ntgnoob5@gmail.com</strong> (PayPal/UPI)<br/>
+      Or DM “YES” on Instagram to @youraccount</p>
+      <button onclick="alert('Thank you! Send proof on Instagram or Email. PDF will be delivered manually.')">
+        Get PDF Now
+      </button>
+    </div>
   </section>
 
   <footer>
-    © 2025 VERITAS FORCE AGENCY. Founded by Khan & Colin. All rights reserved.
+    &copy; 2025 Veritas Force Agency – Intelligence Beyond Borders. <br/>
+    Legal Disclosure: All data is ethical & secure. No AI systems disclosed publicly.
   </footer>
-
-  <script>
-    function showSection(id) {
-      document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
-      document.getElementById(id).classList.remove('hidden');
-    }
-  </script>
-
 </body>
 </html>
