@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Veritas Force Agency</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       background-color: #0f0f0f;
       color: #f8f8f8;
@@ -24,28 +27,35 @@
     }
     nav {
       text-align: center;
-      margin: 20px 0;
+      margin: 10px 0;
+      background: #111;
+      padding: 10px 0;
+      border-bottom: 1px solid #222;
     }
     nav a {
       margin: 0 15px;
       color: #00ffe7;
       text-decoration: none;
       font-weight: bold;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
-      padding: 20px;
+      padding: 40px 20px;
       max-width: 800px;
       margin: auto;
     }
+    section h2 {
+      color: #00ffe7;
+    }
     .cta {
       background: #1e1e1e;
-      padding: 15px;
+      padding: 20px;
       border: 2px solid #00ffe7;
       margin-top: 30px;
       text-align: center;
-    }
-    .cta h2 {
-      color: #00ffe7;
     }
     .cta button {
       background: #00ffe7;
@@ -68,42 +78,67 @@
 <body>
   <header>
     <h1>VERITAS FORCE AGENCY</h1>
-    <p>Global Intelligence. Ethical Power. 2 Agents Only — Colin & Khan.</p>
+    <p>Private Intelligence Unit. 2 Agents Only — Colin & Khan.</p>
   </header>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Operations</a>
-    <a href="#">PDF Intel</a>
-    <a href="#">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#intel">Intel Drop</a>
+    <a href="#payment">Buy PDF</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <section>
-    <h2>🛡️ Spyware Detection Guide 2025</h2>
-    <p><strong>Are you being watched?</strong><br/>
-    Over 9 citizens were found with hidden spyware on their phones — tracking calls, chats, microphone, even locations.</p>
+  <section id="home">
+    <h2>Welcome to Veritas Force</h2>
+    <p>We are an elite intelligence agency operating independently of all global powers — legal, secure, untouchable.</p>
+    <p>All operations are classified. We publish only what the public deserves to know. Our agency consists of just 2 human agents:</p>
+    <ul>
+      <li><strong>Khan</strong> — Field Commander</li>
+      <li><strong>Colin</strong> — Strategic AI Analyst</li>
+    </ul>
+  </section>
 
-    <p>Veritas Force has published a real intelligence PDF that shows how to:</p>
+  <section id="intel">
+    <h2>📡 Public Intel Drop</h2>
+    <p>9+ hidden spyware operations were found active this week. Phones were infected with:</p>
+    <ul>
+      <li>Microphone listeners</li>
+      <li>Keyboard trackers</li>
+      <li>Location leaks</li>
+    </ul>
+    <p>We publish reports, videos, and guidance. Follow our Instagram for latest drops.</p>
+  </section>
+
+  <section id="payment">
+    <h2>🧠 Spyware Defense Guide 2025</h2>
+    <p>Learn how to:</p>
     <ul>
       <li>Detect spyware (no root needed)</li>
-      <li>Secure your mobile like a pro</li>
-      <li>Use tools that FBI/CIA consultants use</li>
-      <li>Set up a kill-switch (wipes on break-in)</li>
+      <li>Secure your Android like a pro</li>
+      <li>Set up anti-surveillance layers</li>
     </ul>
 
     <div class="cta">
-      <h2>🧠 Buy Now – Only ₹199 / $5</h2>
-      <p>Send payment to: <strong>ntgnoob5@gmail.com</strong> (PayPal/UPI)<br/>
-      Or DM “YES” on Instagram to @youraccount</p>
+      <h3>Get the PDF – ₹199 / $5</h3>
+      <p>Send payment to:</p>
+      <p><strong>Email:</strong> ntgnoob5@gmail.com (PayPal or UPI)</p>
+      <p><strong>After payment:</strong> DM us on Instagram or email proof</p>
       <button onclick="alert('Thank you! Send proof on Instagram or Email. PDF will be delivered manually.')">
-        Get PDF Now
+        Buy Now
       </button>
     </div>
   </section>
 
+  <section id="contact">
+    <h2>📬 Contact Us</h2>
+    <p>Instagram: <strong>@veritas_force_agency</strong></p>
+    <p>Email: <strong>ntgnoob5@gmail.com</strong></p>
+    <p>We do not respond to bots or third-party governments. Only real people.</p>
+  </section>
+
   <footer>
-    &copy; 2025 Veritas Force Agency – Intelligence Beyond Borders. <br/>
-    Legal Disclosure: All data is ethical & secure. No AI systems disclosed publicly.
+    &copy; 2025 Veritas Force Agency – Built to Surpass All Powers<br/>
+    Legal: This site does not violate any government laws. Personal intel only.
   </footer>
 </body>
 </html>
