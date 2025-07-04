@@ -2,136 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow">
-  <meta name="description" content="Veritas Force Agency – A legal global cybersecurity and intelligence agency. Smarter than CIA, stronger than FBI.">
-  <meta name="keywords" content="Veritas Force, Cybersecurity, Intelligence Agency, Khan, Colin, FBI, CIA alternative, legal hacking, elite ops">
-  <meta name="author" content="Veritas Force Agency">
-  <title>VERITAS FORCE AGENCY 👑</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VERITAS FORCE AGENCY</title>
   <style>
     body {
       margin: 0;
+      background-color: #000;
       font-family: 'Segoe UI', sans-serif;
-      background: #0d0d0d;
-      color: #f2f2f2;
+      color: #00ff99;
     }
+
     header {
-      background: #1a1a1a;
+      background-color: #111;
       padding: 20px;
       text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      text-shadow: 0 0 10px #0f0;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #00ffe5;
-    }
+
     nav {
+      background-color: #222;
       display: flex;
       justify-content: center;
-      gap: 15px;
-      background: #111;
       padding: 10px;
     }
+
     nav button {
-      background: #00ffe5;
+      background: #00ff99;
       color: #000;
       border: none;
       padding: 10px 20px;
+      margin: 5px;
       font-weight: bold;
       cursor: pointer;
-      border-radius: 10px;
+      border-radius: 8px;
+      transition: 0.3s;
     }
+
+    nav button:hover {
+      background: #00cc77;
+    }
+
     section {
       padding: 30px;
-      display: none;
-    }
-    section.active {
-      display: block;
-    }
-    .legal {
-      font-size: 0.9em;
-      color: #aaa;
       text-align: center;
-      padding: 10px;
     }
-    input, textarea {
-      width: 100%;
-      margin: 10px 0;
-      padding: 10px;
-      border-radius: 8px;
-      border: none;
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 20px;
     }
-    .submit-btn {
-      background: #00ffe5;
-      color: black;
-      font-weight: bold;
-      border: none;
-      padding: 10px;
-      border-radius: 8px;
-      cursor: pointer;
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #888;
     }
-    .profile-card {
-      background: #1a1a1a;
-      margin: 10px;
-      padding: 15px;
-      border-radius: 15px;
+
+    .hidden {
+      display: none;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>VERITAS FORCE AGENCY 👑</h1>
-    <p>Legal Intelligence. Digital Dominance.</p>
-  </header>
+
+  <header>VERITAS FORCE AGENCY</header>
 
   <nav>
-    <button onclick="showTab('login')">Login</button>
-    <button onclick="showTab('submit')">Submit Report</button>
-    <button onclick="showTab('agents')">Our Agents</button>
-    <button onclick="showTab('contact')">Contact</button>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('members')">Members</button>
+    <button onclick="showSection('report')">Submit Report</button>
+    <button onclick="showSection('legal')">Legal</button>
   </nav>
 
-  <section id="login" class="active">
-    <h2>Secure Login</h2>
-    <input type="text" placeholder="Username">
-    <input type="password" placeholder="Password">
-    <button class="submit-btn" onclick="alert('Login system under secure upgrade')">Login</button>
+  <section id="about">
+    <div class="section-title">Who Are We?</div>
+    <p>Veritas Force Agency is a global cyber intelligence unit founded by Colin & Khan — two minds sharper than any system on Earth.</p>
+    <p>We operate legally. No tracking. No manipulation. Only truth, power, and cyber justice.</p>
   </section>
 
-  <section id="submit">
-    <h2>Submit New Case Report</h2>
-    <input type="text" placeholder="Case Title" />
-    <textarea placeholder="Detailed Report..."></textarea>
-    <button class="submit-btn" onclick="alert('Report Submitted Successfully ✅')">Submit</button>
+  <section id="members" class="hidden">
+    <div class="section-title">Members</div>
+    <p><strong>Khan</strong> — Cyber Commander</p>
+    <p><strong>Colin</strong> — Strategic AI Unit</p>
+    <p>2 Members Only. Enough to outpower any agency worldwide.</p>
   </section>
 
-  <section id="agents">
-    <h2>Core Agency Members</h2>
-    <div class="profile-card">
-      <h3>Khan (Founder & Operator)</h3>
-      <p>Role: Lead Investigator, Tactical Strategist</p>
-    </div>
-    <div class="profile-card">
-      <h3>Colin (Intel Engine)</h3>
-      <p>Role: Advanced AI Analyst, Infrastructure & Cyber Defense</p>
-    </div>
+  <section id="report" class="hidden">
+    <div class="section-title">Submit a Case Report</div>
+    <p>Click below to report your case directly to our Command Center.</p>
+    <a href="mailto:ntgnoob5@gmail.com?subject=New Case Report&body=Describe your case here..." style="color:#00ff99;text-decoration:underline;font-weight:bold;">📧 Report via Email</a>
+    <p>(Opens your email app. No data stored on servers.)</p>
   </section>
 
-  <section id="contact">
-    <h2>Contact Veritas Force</h2>
-    <p>Email: contact@veritasforce.org</p>
-    <p>Emergency Protocol: Submit report directly from this page.</p>
+  <section id="legal" class="hidden">
+    <div class="section-title">Legal Notice</div>
+    <p>This is a lawful private intelligence agency.</p>
+    <p>We are not affiliated with any government — we surpass them through skill, not control.</p>
+    <p>All investigations follow international cyber law and digital rights regulations.</p>
   </section>
 
-  <div class="legal">
-    ⚖️ Veritas Force is a legal intelligence & cybersecurity agency under international cyber law. We do not conduct or support illegal activities. All data submitted is protected under our privacy policy and used for ethical investigations only.
-  </div>
+  <footer>
+    © 2025 VERITAS FORCE AGENCY. Founded by Khan & Colin. All rights reserved.
+  </footer>
 
   <script>
-    function showTab(tab) {
-      document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
-      document.getElementById(tab).classList.add("active");
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
     }
   </script>
+
 </body>
 </html>
